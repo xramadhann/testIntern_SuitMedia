@@ -54,8 +54,7 @@ class _firstScreenState extends State<firstScreen> {
                     padding: const EdgeInsets.only(left: 20),
                     child: TextField(
                       decoration: const InputDecoration(
-                          labelText: 'Enter a string',
-                          border: InputBorder.none),
+                          labelText: 'Name', border: InputBorder.none),
                       onChanged: (text) {
                         setState(() {
                           inputText = text;

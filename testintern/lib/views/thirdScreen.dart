@@ -6,14 +6,14 @@ import 'package:testintern/Models/dataUser.dart';
 import 'package:testintern/views/firstScreen.dart';
 import 'package:testintern/views/secondScreen.dart';
 
-class thirdPage extends StatefulWidget {
-  const thirdPage({super.key});
+class thirdScreen extends StatefulWidget {
+  const thirdScreen({super.key});
 
   @override
-  State<thirdPage> createState() => _thirdPageState();
+  State<thirdScreen> createState() => _thirdScreenState();
 }
 
-class _thirdPageState extends State<thirdPage> {
+class _thirdScreenState extends State<thirdScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
