@@ -1,5 +1,6 @@
 // ignore_for_file: file_names, camel_case_types, prefer_const_constructors
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:testintern/Models/dataUser.dart';
 import 'package:testintern/views/secondScreen.dart';
@@ -38,9 +39,12 @@ class _firstScreenState extends State<firstScreen> {
                     height: 150,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      image: DecorationImage(
-                        image: NetworkImage("https://picsum.photos/200"),
-                      ),
+                      color: const Color.fromARGB(255, 214, 214, 214),
+                    ),
+                    child: Icon(
+                      CupertinoIcons.person_add_solid,
+                      size: 50,
+                      color: Colors.white,
                     ),
                   ),
                   SizedBox(height: 50),
