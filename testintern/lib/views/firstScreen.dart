@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, camel_case_types, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:testintern/views/thirdScreen.dart';
 
 class firstScreen extends StatefulWidget {
   const firstScreen({super.key});
@@ -113,7 +114,12 @@ class _firstScreenState extends State<firstScreen> {
             ),
             const SizedBox(height: 20),
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => thirdPage()),
+                );
+              },
               child: Container(
                 width: MediaQuery.of(context).size.width * 0.90,
                 height: 50,
