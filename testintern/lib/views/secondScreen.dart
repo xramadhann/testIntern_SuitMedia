@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, camel_case_types, unnecessary_string_interpolations
+// ignore_for_file: file_names, camel_case_types, unnecessary_string_interpolations, unnecessary_const
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:testintern/Models/dataUser.dart';

@@ -126,7 +126,7 @@ class _firstScreenState extends State<firstScreen> {
                 width: MediaQuery.of(context).size.width * 0.90,
                 height: 50,
                 decoration: BoxDecoration(
-                  color: Colors.blue,
+                  color: const Color.fromARGB(255, 43, 99, 123),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: const Center(
@@ -164,7 +164,7 @@ class _firstScreenState extends State<firstScreen> {
                 width: MediaQuery.of(context).size.width * 0.90,
                 height: 50,
                 decoration: BoxDecoration(
-                  color: Colors.blue,
+                  color: const Color.fromARGB(255, 43, 99, 123),
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: const Center(
