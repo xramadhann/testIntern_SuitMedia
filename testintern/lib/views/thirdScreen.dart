@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:testintern/Models/dataUser.dart';
 import 'package:testintern/views/firstScreen.dart';
+import 'package:testintern/views/secondScreen.dart';
 
 class thirdPage extends StatefulWidget {
   const thirdPage({super.key});
@@ -41,6 +42,12 @@ class _thirdPageState extends State<thirdPage> {
               return Padding(
                 padding: const EdgeInsets.only(top: 10, left: 10, right: 10),
                 child: GestureDetector(
+                  onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => secondScreen(user: allUsers[index]),
+                    ),
+                  ),
                   child: Container(
                     decoration: const BoxDecoration(
                       color: Colors.white,
