@@ -22,9 +22,61 @@ void checkPalindrome() {
 class _firstScreenState extends State<firstScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
-        child: Text("Hello World"),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.all(20),
+              child: Column(
+                children: [
+                  Container(
+                    width: MediaQuery.of(context).size.width * 0.90,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    padding: const EdgeInsets.only(left: 20),
+                    child: TextField(
+                      decoration: const InputDecoration(
+                          labelText: 'Enter a string',
+                          border: InputBorder.none),
+                      onChanged: (text) {
+                        setState(() {
+                          inputText = text;
+                        });
+                      },
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  Container(
+                    width: MediaQuery.of(context).size.width * 0.90,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    padding: const EdgeInsets.only(left: 20),
+                    child: TextField(
+                      enabled: false,
+                      decoration: const InputDecoration(
+                          labelText: 'Result', border: InputBorder.none),
+                      controller: TextEditingController(
+                        text: inputText.isEmpty
+                            ? "Text is empty"
+                            : (isPalindrome
+                                ? "This is a Palindrome"
+                                : "This is not a Palindrome"),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
